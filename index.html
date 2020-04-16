@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Cadastro de jogador</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+  <h1 class="titulo-cadastro"> Cadastro de Jogador </h1>
+    <div class="componentes-cadastro">
+      <form class="form-row" id="register" method="post" onsubmit="validacao();"> 
+
+        <div class="col">
+          <label for="nome-usuario">Nome:</label>
+          <input type="name" class="form-control " id="nome" name="nome"  autofocus/> 
+        </div>     
+
+        <div class="col">
+          <label for="idade">Idade:</label>
+          <input type="number" min="1" step="1" id="idade" name="idade" class="form-control " value="1" />
+        </div>
+
+        <div class="col">
+          <label for="nivel">Nivel:</label>
+          <input type="number" min="1" step="1" id="nivel"  name="nivel" class="form-control " value="1" />
+        </div>
+
+        <button class="btn btn-outline-dark btn-lg btn-block" align="center" id="botao-enviar">Enviar </button>
+      </form>
+         <button class="btn btn-outline-dark btn-lg btn-block" align="center" id="botao-pesquisa">Pesquisa </button>
+    </div>
+
+
+  <div class="componentes-pesquisa display ">
+    <form class="form-row" id="register" method="post" onsubmit="validacao();"> 
+
+      <div class="col">
+        <label for="nome-usuario">Pesquise pelo Nome: </label>
+        <input type="name" class="form-control" id="nomePesquisa" name="nome" autofocus/> 
+      </div>     
+
+      <div class="col">
+        <label for="idade">Pesquise pela Idade:</label>
+        <input type="number" class="form-control" min="1" step="1" id="idadePesquisa" name="idade" value="1" disabled/>
+       </div>
+
+      <div class="col">
+        <label for="nivel">Pesquise pelo Nivel: </label>
+        <input type="number" class="form-control" min="1" step="1" id="nivelPesquisa" name="nivel" value="1" disabled/>
+      </div>
+
+    </form>
+  </div>
+
+  <table class="table table-bordered" id="tabela-jogadores">
+    <thead>
+      <tr class="thead">
+        <th scope="col">Nome</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Nivel</th>
+      </tr>
+    </thead>
+
+    <tbody class="lista-jogadores">
+      <tr class="jogador">
+        <td class="nome">Natalia</td>
+        <td class="idade">20</td>
+        <td class="nivel">3</td>
+      </tr>
+    </tbody>
+  </table>
+
+<script src="js/index.js"></script>
+<script src="js/remover-jogador.js"></script>
+<script src="js/pesquisa.js"></script>
+<script src="js/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

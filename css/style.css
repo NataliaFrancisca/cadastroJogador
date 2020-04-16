@@ -1,0 +1,63 @@
+body {    
+	width: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
+}
+
+.titulo-cadastro{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.componentes-cadastro{
+	margin: 20px;
+
+}
+
+thead{
+	color: black !important;
+	background-color: #f2f3f4 !important;
+	text-align: center;
+}
+
+#botao-enviar{
+	background-color: #faebd7;
+	margin-top: 2rem;
+}
+
+#botao-pesquisa{
+	background-color:#f0f8ff;
+	margin-top: 2rem;
+}
+
+#tabela-jogadores{
+	width: 50%;
+	margin: auto;
+	margin-bottom: 2rem;
+	align-self: center;
+}
+
+.erro{
+	border: red solid 0.2rem !important;
+}
+
+.componentes-pesquisa{
+	margin: 20px;
+	text-align: center;
+}
+
+.display{
+	display: none;
+}
+
+.invisivel{
+	display:none;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
